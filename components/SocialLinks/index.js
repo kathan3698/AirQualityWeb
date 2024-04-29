@@ -16,14 +16,14 @@ function SocialLinks() {
   return (
     <div className="flex">
       <SocialLink
-        link="https://github.com/u-barnwal/AirQualityMonitorWeb"
+        link="https://github.com/kathan3698/AirQualityWeb"
         image="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
         title="View on GitHub"
       />
 
       <SocialLink
-        link="https://utsavbarnwal.me"
-        image="https://utsavbarnwal.me/images/user.jpeg"
+        link="https://github.com/kathan3698"
+        image="https://avatars.githubusercontent.com/u/168336068?v=4"
         title="Developer"
       />
     </div>

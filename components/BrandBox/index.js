@@ -15,7 +15,7 @@ function BrandBox({ cities }) {
         <CardContainer className="bg-primary rounded-3xl rounded-l-none text-white p-10 mr-10 md:mr-0">
           <Live className="mb-2" />
 
-          <div className="text-3xl font-bold mb-3">Air Quality Monitor</div>
+          <div className="text-3xl font-bold mb-3">Breathe Easy!</div>
 
           <SocialLinks />
         </CardContainer>
