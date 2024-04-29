@@ -75,6 +75,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: HTML export
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Echo file structure
         run: |
           ls -al
@@ -82,7 +84,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./.next/server/pages/
+          # path: ./.next/server/pages/
+          path: ./out
 
   # Deployment job
   deploy:
